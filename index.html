@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheatsheet - color</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-text">
+      <p>Cheatsheet</p>
+      <h1>Learning: About Colors</h1>
+    </div>
+  </header>
+  <main>
+    <section class="topic">
+      <h2 class="topic-title">Color Name Keywords</h2>
+      <section class="explenation">
+        <p>Color name keywords can be used to set color property values for elements in CSS.</p>
+      </section>
+      <aside class="code-example">
+
+        <!-- example one -->
+        <div class="snippet">
+          <p><span class="selector">h1</span> {</p>
+          <p><span class="property">color:</span> aqua;</p>
+          <p>}</p>
+        </div>
+        <!-- end example one -->
+
+        <!-- emaxple two -->
+        <div class="snippet">
+          <p><span class="selector">li</span> {</p>
+          <p><span class="property">background-color:</span> khaki;</p>
+          <p>}</p>
+        </div>
+        <!-- end example two -->
+      </aside>
+    </section>
+
+    <section class="topic">
+      <h2 class="topic-title">CSS Color Alpha Values</h2>
+      <section class="explenation">
+        <p><em>Alpha values</em> determine the transparency of colors in CSS. Alpha values can be set for both RGB and
+          HSL colors by using <span class="code">rgba()</span> and <span class="code">hsla()</span> and providing a
+          fourth value representing alpha. Alpha values can range between <span class="code">0.0</span> (totally
+          transparent) and <span class="code">1.0</span> (totally opaque).</p>
+        <p>The CSS <span class="code">transparent</span> value can also be used to create a fully transparent element.
+        </p>
+      </section>
+      <aside class="code-example">
+        <div class="snippet">
+          <p><span class="selector">.midground </span> {</p>
+          <p><span class="property">background-color:</span> rgba(0, 255, 0, 0.5);</p>
+          <p>}</p>
+        </div>
+
+        <div class="snippet">
+          <p><span class="selector">.foreground</span> {</p>
+          <p><span class="property">background-color:</span> hsla(34, 100%, 50%, 0.1);</p>
+          <p>}</p>
+        </div>
+
+        <div class="snippet">
+          <p><span class="selector">.transparent</span> {</p>
+          <p><span class="property">color:</span> transparent;</p>
+          <p>}</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="topic">
+      <h2 class="topic-title">CSS Hexadecimal Colors</h2>
+      <section class="explenation">
+        <p>CSS colors can be represented in <em>hexadecimal</em> (or <em>hex</em>) notation. Hexadecimal digits can
+          represent sixteen different values using <span class="code">0-9</span> and <span class="code">a-f</span>.</p>
+        <p>Hexadecimal colors are composed of 6 characters–each group of two represents a value between 0 and 255 for
+          red, green, or blue. For example <span class="code">#ff0000</span> is all red, no green, and no blue.</p>
+        <p>When both characters of all three colors are repeated, hex colors can be abbreviated to only three values, so
+          <span class="code">#0000ff</span> could also be represented as <span class="code">#00f</span>.</p>
+      </section>
+      <aside class="code-example">
+        <div class="snippet">
+          <p><span class="selector">.red</span> {</p>
+          <p><span class="property">color:</span> #ff0000;</p>
+          <p>}</p>
+
+        </div>
+        <div class="snippet">
+          <p><span class="selector">.short-blue</span> {</p>
+          <p><span class="property">color:</span> #00f;</p>
+          <p>}</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="topic">
+      <h2 class="topic-title">CSS HSL Colors</h2>
+      <section class="explenation">
+        <p>CSS colors can be declared with the <em>HSL</em> color system using <span class="code">hsl()</span> syntax.
+          This syntax contains three values: <em>hue</em> (the color value itself), <em>saturation</em> (intensity), and
+          <em>lightness</em>.</p>
+        <p>Hue values range from 0 to 360 while saturation and lightness values are represented as percentages.</p>
+      </section>
+      <aside class="code-example">
+        <div class="snippet">
+          <p><span class="selector">.light-blue</span> {</p>
+          <p><span class="property">background-color:</span> hsl(200, 70%, 50%);</p>
+          <p>}</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="topic">
+      <h2 class="topic-title">CSS rgb() Colors</h2>
+      <section class="explenation">
+        <p>CSS colors can be declared with <em>RGB</em> colors using <span class="code">rgb()</span> syntax.</p>
+        <p><span class="code">rgb()</span> should be supplied with three values representing red, green, and blue. These
+          values range can from 0 to 255.</p>
+      </section>
+      <aside class="code-example">
+        <div class="snippet">
+          <p><span class="selector">.hot-pink </span>{</p>
+          <p><span class="property">color:</span> rgb(249, 2, 171);</p>
+          <p>}</p>
+        </div>
+
+        <div class="snippet">
+          <p><span class="selector">.green </span>{</p>
+          <p><span class="property">color:</span> rgb(0, 255, 0);</p>
+          <p>}</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="examples">
+      <h2>Examples</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th class="first-heading" scope="col">Type of notation</th>
+            <th scope="colgroup" colspan="7">CSS Notation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name Keywords</td>
+            <td class="red">red</td>
+            <td class="blue">blue</td>
+            <td class="hotpink">hotpink</td>
+            <td class="green">green</td>
+          </tr>
+          <tr>
+            <td>Hexadecimal</td>
+            <td>#f00</td>
+            <td>#00f</td>
+            <td>#ff69b4</td>
+            <td>#008000</td>
+          </tr>
+          <tr>
+            <td>HSL</td>
+            <td>hsl(0, 100%, 50%);</td>
+            <td>hsl(240, 100%, 50%)</td>
+            <td>hsl(330, 100%, 71%)</td>
+            <td>hsl(120, 100%, 25%)</td>
+          </tr>
+          <tr>
+            <td>RGB</td>
+            <td>rgb(255, 0, 0)</td>
+            <td>rgb(0, 0, 255)</td>
+            <td>rgb(255, 107, 181)</td>
+            <td>rgb(0, 128, 0)</td>
+          </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+      </table>
+    </section>
+  </main>
+</body>
+
+</html>
